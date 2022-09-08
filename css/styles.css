@@ -1,0 +1,258 @@
+body {
+    color:var(--branco);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:14px;
+    border-style: none;
+    border:none;
+}
+.fontbolder {
+    font-weight: bolder;
+    
+}
+.font-color1 {
+    color:#fdfdfd;
+}
+.font-color2 {
+    color:#fefefe;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    /* overflow: hidden;     */
+}
+header {
+    
+    background-color: var(--cor-bg);    
+    height: 5rem;
+}
+/* Cabeçalho - logo */
+.logo {
+    padding-top:15px;
+}
+/* Cabeçalho - Localização*/
+
+.localizacao {
+    margin-top:20px;
+    padding:0px;
+    
+}
+/* Cabeçalho - Pesquisa */
+.pesquisa {
+    height: auto;
+    margin-top:15px;
+    min-width:30%;
+    padding: 0px;
+}
+.pesquisa:focus-within {
+    border:3px solid #febd69;
+    border-radius: 10px;
+}
+.pesquisa select {   
+    background-color: #f3f3f3;
+    float: left;
+    width: 10%;
+    min-width: 20%;
+    max-width: 20%;
+    height:45px; 
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-right:1px solid #bfbdbdaa
+}
+
+.pesquisa input {
+    float: left;
+    outline: none;
+    width: 100%;
+    min-width: 20%;
+    max-width: 70%;
+    height:45px;
+    
+}
+.pesquisa button {
+    float: left;
+    width: 10%;
+    max-width:11.3%;
+    height:45px;
+    background-color:#febd69;
+    vertical-align: top;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    outline: none;
+}
+.pesquisa img {
+    min-width: 25%;
+    max-width:25%;
+}
+/* Cabeçalho - Login */
+.login {
+    width:12%;
+    margin-top:10px;
+}
+.login select {
+    background-color:var(--cor-bg);
+}
+
+/* Cabeçalho - Pedidos */
+.pedidos {
+    margin-top:10px;
+}
+.epedidos {
+    font-weight: bolder;
+}
+/* Cabeçalho - Carrinho */
+.carrinho {
+    width:13%;
+    margin-top:10px;
+}
+.carrinho img {
+    width:40px;
+    vertical-align: middle;
+    margin-right:15px;
+}
+
+/* Navbar */
+nav {
+    background-color: #34455a;
+    height: auto;
+}
+nav ul{
+    width: calc(8.333% * 8);
+    float:left;
+    list-style: none;
+        
+}
+nav ul li {
+    vertical-align: middle;
+    width:auto;
+    margin:10px  15px;
+    padding:5px;
+}
+nav h1 {
+    margin:-35px 10px;
+    font-weight: 400;
+}
+span {
+    font-weight: bolder;
+}
+/* Carrossel */
+.carrossel {
+    position: relative;
+    width:100%;
+    height:20rem;
+}
+.slide {
+    position:absolute;
+    transition:all 0.5s;
+    width:100%;
+    
+    height:20rem;
+}
+.btn {
+    position:absolute;
+    z-index: 10;
+    width:40px;
+    height:100px;
+    background-color: transparent;
+    color:black;
+    font-size:30px;
+    top:3rem;
+}
+.btn:active {
+    transform:scale(1.1);
+}
+.btn-esquerdo {
+    left:2rem;
+}
+.btn-direito {
+    right:2rem;
+}
+.bgcarrossel1 {
+    width:100%;
+    height:180%;
+    background: linear-gradient(90deg, #a4d595, #5c827f);
+
+}
+.bgcarrossel2 {
+    width:100%;
+    height:180%;
+    background: linear-gradient(90deg, #d5be95, #82775c);
+
+}
+
+.bgcarrossel3 {
+    width:100%;
+    height:180%;
+    background: linear-gradient(90deg, #95c5d5, #5c7282);
+
+}
+
+.bgcarrossel4 {
+    width:100%;
+    height:180%;
+    background: linear-gradient(90deg, #d59598, #825c64);
+
+}
+
+
+/* Seção - Produtos */
+.produtos {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    z-index:10;
+}
+.produtos div {
+    display: flex;
+    background-color: #fff;
+    width:250px;
+    color:#000;
+    justify-content: center;
+    padding:25px 15px;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.produtos img {
+    width:150px;
+    margin:auto;
+    
+}
+
+
+@media (max-width:1185px) {
+header {
+    display: flex;
+    height:30%;
+    flex-wrap: wrap;
+    flex-shrink: 0px;
+}
+.localizacao {
+    display:none;
+}
+.pesquisa {
+    max-width: 100%;
+    min-width: 90%;
+    width: 100%;
+    order: 4;
+    margin: 0px 15px;
+    margin-bottom: 15px;
+   
+    
+}
+.carrinho {
+    order:3;
+}
+.login {
+    margin-left:auto;
+    order: 2;
+}
+.login select {
+    display:none;
+}
+.pedidos{
+    display:none;
+}
+nav h1{
+    display:none;
+}
+}

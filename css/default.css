@@ -1,0 +1,144 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    border:none;
+    
+}
+:root {
+    --cor-bg:#232f3e;
+    --branco:#fff;
+    --bigbolder:var(--font16px) var(--fontbolder);
+
+}
+/* padrão */
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+    text-align: right;
+}
+
+.center {
+    text-align: center;
+    margin: auto;
+}
+
+.clearfix::after {
+    display: table;
+    float: none;
+    content: "";
+    clear: both;
+    overflow: auto;
+}
+
+.container {
+    width: 100%;
+    min-width: 340px;
+    max-width: 1280px;
+    margin: auto;
+}
+
+
+/*Grid*/
+
+.col-1 {
+    width: 8.333%;
+}
+
+.col-2 {
+    width: 16.666%;
+}
+
+.col-3 {
+    width: 24.99%;
+}
+
+.col-4 {
+    width: 33.32%;
+}
+
+.col-5 {
+    width: 41.665%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.331%;
+}
+
+.col-8 {
+    width: calc(8.333% * 8);
+    /*66.664%*/
+}
+
+.col-9 {
+    width: calc(8.333% * 9);
+    /*74.997%;*/
+}
+
+.col-10 {
+    width: calc(8.333% * 10);
+    /*83.33%;*/
+}
+
+.col-11 {
+    width: calc(8.333% * 11);
+    /*91.663%;*/
+}
+
+.col-12 {
+    width: calc(8.333% * 12);
+    /*100%*/
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 10px;
+    /* border: 1px solid red; */
+}
+
+.row::after {
+    /*equivalente ao clearfix*/
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+/* Paddings */
+
+.p-1 {
+    padding: 10px;
+}
+
+.p-2 {
+    padding: 20px;
+}
+
+.p-3 {
+    padding: 30px;
+}
+
+.p-4 {
+    padding: 40px;
+}
+
+.p-5 {
+    padding: 50px;
+}
+
+.responsive {
+    width: 100%;
+    height: auto;
+}
+
+.circle {
+    border-radius: 50%;
+}

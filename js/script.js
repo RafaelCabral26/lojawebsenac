@@ -1,7 +1,6 @@
-const slides = document.querySelectorAll(".slide");
-
+let slides = document.querySelectorAll(".slide");
 slides.forEach((slide,indx) => {
-    slide.style.transform = `translateX(${indx * 100}%)`;
+  slide.style.transform = `translateX(${indx * 100}%)`;
 });
 
 let slideAtual = 0;
@@ -9,16 +8,7 @@ let slideAtual = 0;
 let proximoSlide = document.querySelector('.btn-direito');
 
 proximoSlide.addEventListener("click", function () {
-    slideAtual++;
-
- slides.forEach((slide, indx) => {
-   slide.style.transform = `translateX(${100 * (indx - slideAtual)}%)`;
- });
-});
-
-
-proximoSlide.addEventListener("click", function () {
-    if (slideAtual === maxSlide) {
+    if (slideAtual === 3) {
       slideAtual = 0;
     } else {
       slideAtual++;
@@ -33,7 +23,7 @@ proximoSlide.addEventListener("click", function () {
 
   anteriorSlide.addEventListener("click", function() {
     if(slideAtual === 0) {
-        slideAtual = maxSlide;
+        slideAtual = 3;
     } else {
         slideAtual--;
     }

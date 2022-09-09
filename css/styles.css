@@ -173,29 +173,31 @@ span {
 .btn-direito {
     right:0.1rem;
 }
-.bgcarrossel1 {
+.slide:before {
+    content:'';
+    position:absolute;
+    height:100%;
     width:100%;
-    height:180%;
-    background: linear-gradient(90deg, #a4d595, #5c827f);
-
+    background: linear-gradient(to top ,#ffffff 10%, transparent 90%);
+    transition:all 0.5s ease;
+    left:0;
+    bottom:0;
 }
+.bgcarrossel1 {
+    background: linear-gradient(90deg, #a4d595, #5c827f);
+} 
+
 .bgcarrossel2 {
-    width:100%;
-    height:180%;
     background: linear-gradient(90deg, #d5be95, #82775c);
 
 }
 
 .bgcarrossel3 {
-    width:100%;
-    height:180%;
     background: linear-gradient(90deg, #95c5d5, #5c7282);
 
 }
 
 .bgcarrossel4 {
-    width:100%;
-    height:180%;
     background: linear-gradient(90deg, #d59598, #825c64);
 
 }
@@ -210,7 +212,7 @@ span {
 }
 .produtos div {
     display: flex;
-    background-color: #fff;
+    background-color: rgb(245, 245, 245);
     width:250px;
     color:#000;
     justify-content: center;

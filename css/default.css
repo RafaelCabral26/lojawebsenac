@@ -10,6 +10,7 @@
     --branco:#fff;
     --bigbolder:var(--font16px) var(--fontbolder);
 
+
 }
 /* padrão */
 
@@ -141,4 +142,10 @@
 
 .circle {
     border-radius: 50%;
+}
+.gray {
+    color:rgb(109, 107, 107);
+}
+.lh0 { 
+    line-height: 0px;
 }

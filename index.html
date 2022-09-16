@@ -6,10 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LojaWEB: Onde vende tudo!</title>
     
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.6.0/css/all.min.css">
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    
     <link rel="stylesheet" href="/css/default.css">
     <link rel="stylesheet" href="/css/styles.css">
 </head>
-<body>
+<body onresize="myFunction()">
     <main>
         <header class="row">
             <div class="logo col-2">
@@ -53,14 +56,18 @@
         </header>
         <nav class="row">
             <ul class="responsive">
-                <li class="left">Todos</li>
+                <li class="left">
+                <i class="fa fa-solid fa-bars"></i>    Todos
+                </li>
                 <li class="left">Venda na Amazon</li>
                 <li class="left">Mais Vendidos</li>
                 <li class="left">Ofertas do Dia</li>
                 <li class="left">Atendimento ao Cliente</li>
-                <li class="left">Prime</li>
                 <li class="left">Música</li>
                 <li class="left">Livros</li>
+                <li class="left">
+                    <a href="#" class="dropdown">Prime <i class="fa fa-solid fa-caret-down"></i></a>
+                </li>
             </ul>
             <h1 class="right">Assista <span>O Senhor dos Anéis</span></h1>
         </nav>
@@ -84,26 +91,47 @@
                 <img src="./img/flecha-dirieta.svg" alt="seta direita">    
             </button>
         </section>
-        <section class="produtos">
-            <div>
-                <p>Ipsum Lorem</p>
-                <img src="./img/caixadesom.svg" alt="caixa de som">
-            </div>
-            <div>
-                <p>Ipsum Lorem</p>
-                <img src="./img/foneouvido.jpg" alt="fone de ouvido">
-            </div>
-            <div>
-                <p>Ipsum Lorem</p>
-                <img src="./img/microfone.jpg" alt="microfone">
-            </div>
-            <div>
-                <p>Ipsum Lorem</p>
-                <img src="./img/teclado.png" alt="teclado">
-            </div>
+       
+        <section class="swiper">
+            <section class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                    <h1>Saldão do Cliente</h1>
+                    <div class="layout1">
+                        <img src="./img/slide1.jpg" alt="caixa de som">
+                    </div>
+                    <p><span class="desconto">Até 100% off</span><span>Termina em 00:00:00</span></p>
+                    <p class="gray">Tênis Bolado D+</p>
+                    <a href="#" class="saibamais">Saiba Mais</a>
+                </div>
+                <div class="swiper-slide">
+                    <h1>Destaques em Dispositivos Amazon</h1>
+                   <div class="layout2">
+                        <img src="/img/AmazonDisp1.jpg" alt="controle">
+                        <span class="lh0">Fire TV Stick com Alexa</span>
+                    </div>
+                    <div class="layouttriplo">
+                        <img src="/img/Kindle.jpg" alt="kindle">
+                        <img src="./img/Dot.jpg" alt="Dot">
+                        <img src="./img/Buds.jpg" alt="Buds">
+                        <p><span>Kindle</span><span>Echo Dot</span><span>Echo Buds</span></p>
+                    </div>
+                    <a href="#"class="saibamais">Saiba Mais</a>
+                </div>
+                <div class="swiper-slide">
+                    <p>Ipsum Lorem</p>
+                    <img src="./img/microfone.jpg" alt="microfone">
+                </div>
+                <div class="swiper-slide">
+                    <p>Ipsum Lorem</p>
+                    <img src="./img/teclado.png" alt="teclado">
+                </div>
+            
+            </section>
         </section>
         
     </main>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="./js/script.js"></script>
 </body>
 </html>

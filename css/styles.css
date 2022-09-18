@@ -45,8 +45,8 @@ header {
     padding: 0px;
 }
 .pesquisa:focus-within {
-    border:3px solid #febd69;
-    border-radius: 10px;
+    outline:3px solid #febd69;
+    border-radius: 5px;
 }
 .pesquisa select {   
     background-color: #f3f3f3;
@@ -163,7 +163,8 @@ span {
 }
 .slider {
     overflow-x:clip;
-    max-width: 1366px;
+    max-width: 1500px;
+    min-width: 360px;
     margin:auto;
 }
 .slide {
@@ -171,14 +172,16 @@ span {
     transition:all 0.5s;
     width:100%;
     height:180%;
-
+    
 }
+
 .btn {
     position:absolute;
     z-index: 10;
     width:100px;
-    height:100%;
+    height:99%;
     background-color: transparent;
+    top:2px;
 }
 .btn img {
     width:60%;
@@ -208,7 +211,8 @@ span {
 }
 .bgcarrossel1 {
     background-image: url('/img/bg1_.jpg');
-    background-size: cover;  
+    background-size: 100%;
+    height:200%;
 } 
 
 .bgcarrossel2 {
@@ -228,9 +232,10 @@ span {
 
 
 /* Seção - Produtos */
+
 .swiper {
     width: 100%;
-    max-width: 1366px;
+    max-width: 1500px;
     height: 400px;
 }
 .swiper-wrapper {
@@ -239,17 +244,29 @@ span {
     width: 100%;
     height: 200px;
 }
+
 .swiper-slide {
-    width: 330px;
-    height: 350px;
-    background-color: #4e8fa0;
+    width: 320px;
+    height: 400px;
+    background-color: #fff;
     color:#000;
     line-height: 30px;
-    padding:5px;
+    padding:20px;
+    
+}
+.swiper-slide img {
+    max-width: 100%;
+}
+.swiper-slide h1 {
+    font-size: 22px;
+}
+.swiper-slide a:visited {
+    color:rgb(43, 43, 255);
 }
 .layout1 {
     width:100%; 
     text-align: center;
+    height: auto;
     line-height: 4px;
 }
 .desconto {
@@ -267,6 +284,9 @@ span {
 .layout2 img {
     width:100%;
 }
+.layout2 h1 {
+   line-height: 18px;
+}
  .layouttriplo img {
     width:32%;
  }
@@ -275,6 +295,14 @@ span {
     width: 32%;
     text-align: center;
     position: relative;
+ }
+
+ .layout4 {
+    width: 100%;
+ }
+ .layout4 img {
+    width: 49.3%;
+    height: 150px;
  }
 .saibamais {
     position:absolute;    
@@ -323,7 +351,17 @@ nav h1{
 }
 .bgcarrossel1, .bgcarrossel2, .bgcarrossel3, .bgcarrossel4 {
     height: 220%;
-}
+    width: 100%;
+
 
 }
 
+}
+@media (max-width:800px) {
+    .swiper {
+        width: 100%;
+        max-width: 1366px;
+        height: 400px;
+    }
+    
+}

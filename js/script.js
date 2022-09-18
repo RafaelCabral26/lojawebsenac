@@ -39,26 +39,36 @@ proximoSlide.addEventListener("click", function () {
  
   //Slider Produtos - Swiper Lib
 
-  var x = document.documentElement.clientWidth
- let swip =  document.getElementsByClassName('.swiper').swiper;
-  function myFunction(x) {
-    if (x < 800) { // If media query matches*/
-      let swiper = new Swiper('.swiper', {
-        // Optional parameters
-        
-            direction: 'horizontal',
-            loop: false,
-            spaceBetween:10,
-            width:200,
-            slidesOffsetBefore:200,
-            slideOffsetAfter:-200,
-            
-          });
-      
-    } else {
-      swip.swiper.destroy();
-      document.body.style.backgroundColor = "pink";
-    }
-  }
- // Call listener function at run time
-window.addEventListener('onresize', myFunction(x));
+  
+
+const swip = document.querySelector('.swiper').swiper;
+let swiper = new Swiper('.swiper', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: false,
+  width:350,
+  
+
+});
+
+ window.addEventListener("resize", function() {
+  if (window.innerWidth > 1001) { 
+    swiper.destroy(true, true);
+    swiper.disable();
+    
+ }else {
+  
+  swiper.enable();
+ }
+});
+window.addEventListener("load", function() {
+  if (window.innerWidth > 1001) { 
+    swiper.disable();
+
+    
+ }else {
+  swiper.enable();
+  
+ }
+});
+

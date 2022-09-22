@@ -47,18 +47,28 @@ let swiper = new Swiper('.swiper', {
   direction: 'horizontal',
   loop: false,
   width:350,
+  breakpoints: {
+    0: {
+      width:250,
+      slidesOffsetAfter:-700,
+    },
+    1000: {
+      width:420,
+      spaceBetween:10,
+    }
+  }
   
 
 });
 
  window.addEventListener("resize", function() {
   if (window.innerWidth > 1001) { 
-    swiper.destroy(true, true);
+    swiper.setProgress(0, 500)
     swiper.disable();
     
  }else {
   
-  swiper.enable();
+  swiper.enable()
  }
 });
 window.addEventListener("load", function() {

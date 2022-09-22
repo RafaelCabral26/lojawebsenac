@@ -1,15 +1,25 @@
-
+html {
+    width:100%;
+    height:100%;
+}
 body {
     margin:0;
     padding:0;
     box-sizing: border-box;
-    height: 100%;
+    min-height: 100%;
     text-decoration: none;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     
   }
+  a {
+    color:#2079c8;
+    text-decoration: none;
+}
   a:visited {
     color:#2079c8;
+}
+a:hover {
+    text-decoration: underline;
 }
 
   .logo {
@@ -33,13 +43,15 @@ body {
     font-weight:600;  
       
 }
-  
-  input {
+
+
+
+.loginbox input, #passtxt  {
     width:100%;
     height:35px;
     border-radius: 5px;
-  }
-  .loginbox button {
+}
+.loginbox button {
     width:102%;
     height:40px;
     background:linear-gradient(180deg, #f4d37f, #f0c24d);
@@ -58,6 +70,50 @@ body {
 i {
     color:gray;
 }
+.passbox {
+    position: relative;
+    width: 380px;
+    height:420px;
+    margin:auto;
+    border:2px solid rgb(177, 177, 177, 0.3);
+    border-radius: 5px;
+    padding:10px 35px;
+    font-weight:600; 
+}
+
+.passbox button {
+    width:102%;
+    height:40px;
+    background:linear-gradient(180deg, #f4d37f, #f0c24d);
+    margin: 15px 0px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+.passbox button:hover {
+    background:linear-gradient(180deg,#f0c24d, #f4d37f);
+    cursor: pointer;
+}
+.passbox .passrecov {
+    float:right;
+    font-weight: 400;
+}
+.emailpass {
+    font-weight: 400;
+}
+.manterconectado {
+    font-weight: 400;
+}
+.manterconectado label  {
+    vertical-align:middle;
+}
+.manterconectado input {
+    width:20px;
+    height: 20px;
+    vertical-align:middle ;
+}
+
+
+
 .ajuda {
     position: absolute;
     bottom:25px;
@@ -99,13 +155,12 @@ i {
     cursor: pointer;
 }
 .rodape {
-    margin:auto;
-    height:30em;
     background-color: #fdfdfd;
     padding:20px;
     border-top: 3px solid ;
     font-size:14px;
     border-image: linear-gradient(90deg, #fff 0%, rgb(131, 131, 131, 0.2) 50%, #fff 100%) 1;
+    margin:20px;
 }
 .rodape ul {
     list-style: none;
@@ -119,10 +174,7 @@ i {
  margin:12px;
  padding:15px;  
 }
-.rodape a { 
-    text-decoration: none;
-    
-}
+
 p {
     text-align: center;
     color:#818181;

@@ -1,0 +1,20 @@
+:root {
+    --dark-blue:#232f3e;
+    --clear-blue:#34455a;
+    --white:#fff;
+    --mostarda:#febd69;
+    --branco:#fff;
+    --bg-dark-white:#eaeded;
+    --clear-green:#4e8fa0;
+    --clear-gray:#f3f3f3;
+    --gray-alfa:#bfbdbdaa;
+    --red:#cc0c39;
+
+
+}
+.font-color1 {
+    color:#fdfdfd;
+}
+.font-color2 {
+    color:#fefefe;
+}

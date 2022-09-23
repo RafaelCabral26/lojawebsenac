@@ -4,7 +4,8 @@ body {
     font-size:14px;
     border-style: none;
     width: 100%;
-    height: 100vh;
+    height: 100%;
+    background-color:var(--clear-gray);
 }
 .fontbolder {
     font-weight: bolder;
@@ -16,28 +17,30 @@ main {
     flex-direction: column;
     background-color: var(--bg-dark-white);
 }
+
+/* Header */
+
 header {
-    
+    display:flex;
     background-color: var(--dark-blue);    
-    height: 5rem;
+    height: auto;
+    justify-content: space-around;
+    align-items: center;
+    gap:20px;
 }
-/* Cabeçalho - logo */
-.logo {
-    padding-top:15px;
-}
-/* Cabeçalho - Localização*/
 
 .localizacao {
-    margin-top:20px;
-    padding:0px;
-    
+    display:flex;
+    white-space: nowrap;
 }
-/* Cabeçalho - Pesquisa */
+.geoicon img{
+    padding-top: 10px;
+    width:20px;
+}
 .pesquisa {
-    height: auto;
-    margin-top:15px;
-    min-width:30%;
-    padding: 0px;
+    display:flex;
+    width:90%;
+    height:45px;
 }
 .pesquisa:focus-within {
     outline:3px solid var(--mostarda);
@@ -45,39 +48,27 @@ header {
 }
 .pesquisa select {   
     background-color: var(--clear-gray);
-    float: left;
-    width: 10%;
-    min-width: 20%;
-    max-width: 20%;
-    height:45px; 
+    min-width: 8%;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
     border-right:1px solid var(--gray-alfa);
+    text-align: center;
 }
 
 .pesquisa input {
-    float: left;
-    outline: none;
     width: 100%;
-    min-width: 20%;
-    max-width: 70%;
-    height:45px;
-    
+    max-width: 80%;
+    outline: none;
 }
 .pesquisa button {
-    float: left;
-    width: 10%;
-    max-width:11.3%;
-    height:45px;
+    width:10%;
     background-color:var(--mostarda);
-    vertical-align: top;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
     outline: none;
 }
 .pesquisa img {
-    min-width: 25%;
-    max-width:25%;
+    width:30%;
 }
 /* Cabeçalho - Login */
 .login {
@@ -141,7 +132,7 @@ nav h1 {
 .dropdown {
     position:absolute;
     text-decoration: none;
-    color:#fff;
+    color:var(--white);
     height: auto;
 }
 .dropdown:focus:after {
@@ -163,7 +154,7 @@ span {
 .carrossel {
     position: relative;
     width:100%;
-    height:20rem;
+    height:18rem;
 }
 .slider {
     overflow-x:clip;
@@ -208,7 +199,7 @@ span {
     position:absolute;
     height:100%;
     width:100%;
-    background: linear-gradient(to top ,#ffffff 10%, transparent 70%);
+    background: linear-gradient(to top ,var(--clear-gray) 10%, transparent 70%);
     transition:all 0.5s ease;
     left:0;
     bottom:0;
@@ -275,7 +266,7 @@ span {
     text-decoration: none;
 }
 .swiper-slide a:visited {
-    color:rgb(43, 43, 255);
+    color:var(--clear-blue-a);
 }
 .layout1 {
     width:100%; 
@@ -286,7 +277,7 @@ span {
 .desconto {
     font-size: 12px;
     background-color: var(--red);
-    color: var(--branco);
+    color: var(--white);
     padding:5px;
     border-radius:2px;
     
@@ -322,8 +313,64 @@ span {
     position:absolute;    
     bottom:0;
 }
+.sec-descubra-title {
+    position: absolute;
+    display:flex;
+    color:var(--dark-blue);
+    top: 10px;
+    left:20px;
+    gap:15px;
+} 
+.sec-descubra-title a {
+    line-height: 35px;
+    text-decoration: none;
+    color:var(--clear-blue-a)
+}
 
+.sec-descubra {
+    display: flex;
+    position: relative;
+    width:100%;
+    max-width: 1800px;
+    height: 300px;
+    justify-content: space-around;
+    align-items: center;
+    margin:auto;
+    margin-top: 60px;
+    background-color: var(--white);
+}
 
+.sec-descubra img {
+    width: 200px;
+    height: 200px;
+}
+.setas {
+    position:absolute;
+    width:45px;
+    height: 115px;
+    margin:10px;
+    background-color: #ffffffaa;
+    box-shadow: 0 1px 3px #888
+    
+}
+.setas:hover {
+    cursor:pointer;
+}
+.setas:focus {
+    border:2px solid var(--clear-blue-a);
+    border-radius:5px;
+    opacity:0.5;
+}
+.setas i {
+    font-size: 30px;
+    color:var(--mostarda);
+}
+.seta-left {
+    left:0;
+}
+.seta-right {
+    right:0;
+}
 @media (max-width:1185px) {
 header {
     display: flex;
@@ -376,6 +423,7 @@ nav h1{
 
 
 }
+
 
 }
 @media (max-width:800px) {

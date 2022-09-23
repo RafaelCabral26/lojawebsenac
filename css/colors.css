@@ -1,13 +1,14 @@
 :root {
-    --dark-blue:#232f3e;
-    --clear-blue:#34455a;
     --white:#fff;
-    --mostarda:#febd69;
-    --branco:#fff;
     --bg-dark-white:#eaeded;
-    --clear-green:#4e8fa0;
     --clear-gray:#f3f3f3;
     --gray-alfa:#bfbdbdaa;
+    --dark-blue:#232f3e;
+    --clear-blue:#34455a;
+    --clear-blue-a:#2079c8;
+    --clear-green:#4e8fa0;
+    --mostarda:#febd69;
+    --mostarda-clear:#f4d37f;
     --red:#cc0c39;
 
 

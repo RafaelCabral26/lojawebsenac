@@ -10,7 +10,10 @@
     --mostarda:#febd69;
     --mostarda-clear:#f4d37f;
     --red:#cc0c39;
-
+ 
+    --dynamic-size: 40px;
+    --arrow-size: 40px;
+    --select-size: calc(var(--dynamic-size) + var(--arrow-size));
 
 }
 .font-color1 {

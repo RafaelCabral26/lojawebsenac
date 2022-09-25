@@ -107,7 +107,7 @@ header {
 .numcompras {
     position: absolute;
     left:22px;
-    top:5px;
+    top:2px;
     color:var(--mostarda);
     font-size:16px;
 
@@ -119,22 +119,13 @@ nav {
     
 }
 nav ul{
-    width: calc(8.333% * 8);
-    float:left;
     list-style: none;
+    vertical-align: middle;
+    margin:0;
         
 }
-nav ul li {
-    vertical-align: middle;
-    width:auto;
-    margin:10px  15px;
-    padding:5px;
 
-}
-nav h1 {
-    margin:-35px 10px;
-    font-weight: 400;
-}
+
 .dropdown {
     position:absolute;
     text-decoration: none;

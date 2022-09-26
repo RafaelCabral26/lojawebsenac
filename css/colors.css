@@ -11,14 +11,24 @@
     --mostarda-clear:#f4d37f;
     --red:#cc0c39;
  
-    --dynamic-size: 40px;
-    --arrow-size: 40px;
-    --select-size: calc(var(--dynamic-size) + var(--arrow-size));
 
 }
-.font-color1 {
+.f-white {
     color:#fdfdfd;
+}
+.bg-white {
+    background-color:var(--white);
 }
 .font-color2 {
     color:#fefefe;
+}
+.bg-dark-blue {
+    background-color:var(--dark-blue);
+}
+.bg-clear-blue {
+    background-color: var(--clear-blue);
+  
+}
+.bg-gray {
+    background-color: var(--gray-alfa);
 }

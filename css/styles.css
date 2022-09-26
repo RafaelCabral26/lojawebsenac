@@ -127,10 +127,11 @@ nav ul{
 
 
 .dropdown {
-    position:absolute;
+    position:relative;
     text-decoration: none;
     color:var(--white);
     height: auto;
+    overflow: visible;
 }
 .dropdown:focus:after {
     content: "";

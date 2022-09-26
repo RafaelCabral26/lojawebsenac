@@ -1,25 +1,33 @@
 * {
+    text-decoration: none;
+    list-style: none;
     margin:0;
     padding:0;
-    box-sizing: border-box;
-    border:none;
+}
+header {
+    background-color:var(--dark-blue);
+    height: 100%;
     
 }
 
-.container {
-    width:100%;
-    height:100vh;
-    background-color: var(--gray-alfa);
-    margin:0;
+nav a {
+    text-decoration: none;
+    list-style: none;
+    color:var(--white);
 }
-.innerContainer {
-    background-color: blue;
-    height:100%;
+.produto-preço {
+    width:180%;
 }
-.produtos_compras {
-    background-color: aqua;
-    height:75%;
+
+.seção2 {
+    
+        flex: 0 0 auto;
+        width: 22%;
+    
 }
-.produtos_subtotal {
-    background-color: aqua;
+.btn-carrinho {
+    font-size:12px;
+    padding:0;
+    text-align: center;
+    height:20%;
 }

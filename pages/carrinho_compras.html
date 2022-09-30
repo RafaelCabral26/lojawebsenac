@@ -17,17 +17,17 @@
 
 <body>
     <main>
-        <header class="container-fluid d-flex justify-content-around align-items-center text-white">
-            <div class="logo">
-                <img height="60" src="/img/MicrosoftTeams-image.png" alt="amazon logo">
+        <header class="d-flex container-fluid justify-content-around align-items-center text-white flex-wrap">
+            <div class="logo col-2">
+                <img class="img-fluid" src="/img/MicrosoftTeams-image.png" alt="amazon logo">
             </div>
-            <div class="localizacao d-flex">
+            <div class="d-none localizacao d-sm-flex">
                 <div class="pt-3">
                     <img src="/img/map-svgrepo-com.svg" alt="geo icon">
                 </div>
                 <p>Olá <br><span class="fontbolder">Selecione o endereço</span></p>
             </div>
-            <div class="pesquisa col-4 d-flex p-3">
+            <div class="pesquisa order-last col-12 order-sm-0 col-sm-4 d-flex p-3">
                 <select class="col-2 py-2">
                     <option value="opt1">Todos</option>
                     <option value="opt2">Tudo</option>
@@ -35,7 +35,7 @@
                     <option value="opt4">Frase extremamente longa</option>
                 </select>
                 <input type="search" id="search" class="col-8 g-0 flex-fill py-2">
-                <button class="col-1 py-1">
+                <button class="col-1 py-1 btn btn-warning">
                     <img src="/img/search-svgrepo-com.svg" alt="" >
                 </button>
             </div>
@@ -79,22 +79,22 @@
 
     </main>
 
-    <section class="container-fluid bg-gray">
+    <section class="container bg-gray">
         <div class="row bg-gray d-flex">
 
-            <div id="seção-produtos"class="bg-white p-2 col-9 m-3">
+            <div id="seção-produtos"class="bg-white rounded p-2 col-sm- 12 col-xxl-9 m-4">
                 <h1>Carrinho de Compras</h1>
                 <p>Desmarcar todos os itens</p>
                 <div class="divisor d-flex justify-content-end border-bottom border-warning">
                     Preço
                 </div>
-                <div class="d-flex p-4 container-fluid">
+                <div class="d-flex p-4 container">
                     <input type="checkbox">
                     <div><img src="/img/carrinho_produtos/41HXrroqRvL._AC_AA180_.jpg" alt="caneta">
                     </div>
-                    <div id="text-produto">
+                    <div id="text-produto col-sm-12">
                         <div class="produto-preço d-flex container-fluid">
-                            <h3 class="flex-fill">Caneta Pencil para Apple</h3>
+                            <h3 class="">Caneta Pencil para Apple</h3>
                             <span class="ms-auto">R$ 999,99</span>
                         </div>
                         <p class="m-0"><span class="badge text-bg-warning">1º mais vendido </span> em Canetas Stylus para celular</p>
@@ -153,7 +153,7 @@
                 </div>
             </div>
             
-            <div class="seção2 d-flex flex-column my-3 ">   
+            <div class="d-flex flex-column my-3 seção2">   
 
                 <div class="d-flex flex-column bg-white col-12 border rounded p-4">
                     <h5>Subtotal(x itens):R$ 999,99</h5>
@@ -162,7 +162,7 @@
                             Fechar Pedido
                         </button>
                 </div>
-                <div class="col-12 p-4 my-2 border rounded bg-white">
+                <div class="secao-produtos-3 col p-4 my-2 border rounded bg-white flex-nowrap">
                     <h6>Recomendações de produtos em nossa loja</h6>
                     <div class="prod1 d-flex ">
                         <div class="p-2">

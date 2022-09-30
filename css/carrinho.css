@@ -20,7 +20,7 @@ nav a {
 }
 
 .seção2 {
-    
+        overflow: hidden;
         flex: 0 0 auto;
         width: 22%;
     
